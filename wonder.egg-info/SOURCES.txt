@@ -1,8 +1,0 @@
-README.md
-setup.py
-wonder/__init__.py
-wonder/pulldata.py
-wonder.egg-info/PKG-INFO
-wonder.egg-info/SOURCES.txt
-wonder.egg-info/dependency_links.txt
-wonder.egg-info/top_level.txt

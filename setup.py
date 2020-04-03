@@ -9,7 +9,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name = "wonder",
+    name = "wonderpy",
     version = "0.0.1",
     author = "Theodore L Caputi",
     author_email = "tcaputi@mit.edu",
