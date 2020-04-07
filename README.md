@@ -7,7 +7,7 @@ This project is a work-in-progress. It works in some cases but may not work in m
 ## Description
 The CDC's WONDER API does not allow users to collect subnational data -- users have to use the online form. This package automates that form. Note that this is still a work in progress.
 
-This package is intended to be used with the R package ["wondeR"](www.github.com/tlcaputi/wondeR).
+This package is intended to be used with the R package ["wondeR"](https://www.github.com/tlcaputi/wondeR).
 
 ## Installation
 
