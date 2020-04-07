@@ -75,8 +75,6 @@ class wonder:
             ):
 
 
-        MCD_ICD_10_CODE_1 = ["X93","X94","X95","X72","X73","X74","W32","W33","W34","Y22","Y23","Y24","Y35.0","Y36.4"]
-        MCD_ICD_10_CODE_2 = None
 
         chrome_options = webdriver.ChromeOptions()
 
@@ -190,90 +188,103 @@ class wonder:
 
 
 
-        if MCD_ICD_10_CODE_1 is not None:
+        # if MCD_ICD_10_CODE_1 is not None:
+        #
+        #     obj = d.find_element_by_css_selector("div.finder-picks").find_element_by_xpath("//input[@id='RO_mcdD77.V13']")
+        #     d.execute_script("arguments[0].click();", obj)
+        #
+        #     d.find_element_by_id("codes-D77.V13").send_keys(Keys.CONTROL, 'a')
+        #
+        #     obj = d.find_element_by_xpath("//input[@name='finder-action-D77.V13-Open Fully']")
+        #     d.execute_script("arguments[0].click();", obj)
+        #
+        #     double_click(d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format(MCD_ICD_10_CODE_1[0])))
+        #
+        #     d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format("*All*")).click()
+        #     d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format(MCD_ICD_10_CODE_1[0])).click()
+        #     obj = d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format(MCD_ICD_10_CODE_1[0]))
+        #     d.execute_script("arguments[0].click();", obj)
+        #
+        #     if len(MCD_ICD_10_CODE_1) > 1:
+        #         for ct in range(1, len(MCD_ICD_10_CODE_1)):
+        #             # d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format(MCD_ICD_10_CODE_1[ct])).click()
+        #             obj = d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format(MCD_ICD_10_CODE_1[ct]))
+        #             d.execute_script("arguments[0].click();", obj)
+        #
+        #
+        #     d.execute_script("add('D77.V13', 'and2')")
+        #
+        #
+        #     if MCD_ICD_10_CODE_2 is not None:
+        #
+        #
+        #         double_click(d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format(MCD_ICD_10_CODE_2[0])))
+        #
+        #         if len(MCD_ICD_10_CODE_2) > 1:
+        #             for ct in range(1, len(MCD_ICD_10_CODE_2)):
+        #                 # d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format(MCD_ICD_10_CODE_2[ct])).click()
+        #                 obj = d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format(MCD_ICD_10_CODE_2[ct]))
+        #                 d.execute_script("arguments[0].click();", obj)
+        #
+        #
+        #         d.execute_script("add('D77.V13_AND', 'and2')")
 
-            obj = d.find_element_by_css_selector("div.finder-picks").find_element_by_xpath("//input[@id='RO_mcdD77.V13']")
-            d.execute_script("arguments[0].click();", obj)
-
-            d.find_element_by_id("codes-D77.V13").send_keys(Keys.CONTROL, 'a')
-
-            obj = d.find_element_by_xpath("//input[@name='finder-action-D77.V13-Open Fully']")
-            d.execute_script("arguments[0].click();", obj)
-
-            double_click(d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format(MCD_ICD_10_CODE_1[0])))
-
-            d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format("*All*")).click()
-            d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format(MCD_ICD_10_CODE_1[0])).click()
-            obj = d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format(MCD_ICD_10_CODE_1[0]))
-            d.execute_script("arguments[0].click();", obj)
-
-            if len(MCD_ICD_10_CODE_1) > 1:
-                for ct in range(1, len(MCD_ICD_10_CODE_1)):
-                    # d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format(MCD_ICD_10_CODE_1[ct])).click()
-                    obj = d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format(MCD_ICD_10_CODE_1[ct]))
-                    d.execute_script("arguments[0].click();", obj)
 
 
-            d.execute_script("add('D77.V13', 'and2')")
-
-
-            if MCD_ICD_10_CODE_2 is not None:
-
-
-                double_click(d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format(MCD_ICD_10_CODE_2[0])))
-
-                if len(MCD_ICD_10_CODE_2) > 1:
-                    for ct in range(1, len(MCD_ICD_10_CODE_2)):
-                        # d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format(MCD_ICD_10_CODE_2[ct])).click()
-                        obj = d.find_element_by_id("codes-D77.V13").find_element_by_xpath("//option[@value='{}']".format(MCD_ICD_10_CODE_2[ct]))
-                        d.execute_script("arguments[0].click();", obj)
-
-
-                d.execute_script("add('D77.V13_AND', 'and2')")
-
-
-
-        elif MCD_CAUSE_CODE_1 is not None:
+        if MCD_CAUSE_CODE_1 is not None:
+            print("MCD CAUSE CODE 1 is NOT None!")
             ############ OPTION 2
             ## Choose 113 Cause List
-            d.find_element_by_css_selector("div.finder-picks").find_element_by_xpath("//input[@id='RO_mcdD77.V15']").click()
+            # d.find_element_by_css_selector("div.finder-picks").find_element_by_xpath("//input[@id='RO_mcdD77.V15']").click()
 
+            box = d.find_element_by_css_selector("div.finder-textarea.finder-textarea-and")
 
-            first_button = d.find_elements_by_xpath("//select[@id='codes-D77.V15']/option")[0]
-            first_button.click()
-
-            cause_button = d.find_element_by_xpath("//select[@id='codes-D77.V15']/option[@value='{}']".format(MCD_CAUSE_CODE_1[0]))
-            cause_button.click()
-
-
-            if len(MCD_CAUSE_CODE_1) > 1:
-                for ct in range(1, len(MCD_CAUSE_CODE_1)):
-                    d.find_element_by_xpath("//select[@id='codes-D77.V15']/option[@value='{}']".format(MCD_CAUSE_CODE_1[ct])).click()
-
-                    # d.find_element_by_css_selector("div.req-form-select-wide-div").find_element_by_xpath("//option[@value='{}']".format(CAUSE_LIST_CODE[ct])).click()
-
-            d.execute_script("add('D77.V15', 'and2 nohier nocodes')")
-
+            text1 = box.find_element_by_id("TD77.V13-AND1")
             for code in MCD_CAUSE_CODE_1:
-                d.find_element_by_xpath("//select[@id='codes-D77.V15']/option[@value='{}']".format(code)).click()
+                text1.send_keys(code)
+                text1.send_keys("\n")
+
+            # first_button = d.find_elements_by_xpath("//select[@id='codes-D77.V15']/option")[0]
+            # first_button.click()
+            #
+            # cause_button = d.find_element_by_xpath("//select[@id='codes-D77.V15']/option[@value='{}']".format(MCD_CAUSE_CODE_1[0]))
+            # cause_button.click()
+            #
+            #
+            # if len(MCD_CAUSE_CODE_1) > 1:
+            #     for ct in range(1, len(MCD_CAUSE_CODE_1)):
+            #         d.find_element_by_xpath("//select[@id='codes-D77.V15']/option[@value='{}']".format(MCD_CAUSE_CODE_1[ct])).click()
+            #
+            #         # d.find_element_by_css_selector("div.req-form-select-wide-div").find_element_by_xpath("//option[@value='{}']".format(CAUSE_LIST_CODE[ct])).click()
+            #
+            # d.execute_script("add('D77.V15', 'and2 nohier nocodes')")
+            #
+            # for code in MCD_CAUSE_CODE_1:
+            #     d.find_element_by_xpath("//select[@id='codes-D77.V15']/option[@value='{}']".format(code)).click()
 
 
 
             if MCD_CAUSE_CODE_2 is not None:
+                text2 = box.find_element_by_id("TD77.V13-AND2")
+                for code in MCD_CAUSE_CODE_2:
+                    text2.send_keys(code)
+                    text2.send_keys("\n")
 
-                ## Choose cause
-                # double_click(d.find_element_by_id("codes-D77.V15").find_element_by_xpath("//option[@value='{}']".format(MCD_CAUSE_CODE_2[0])))
-                cause_button = d.find_element_by_xpath("//select[@id='codes-D77.V15']/option[@value='{}']".format(MCD_CAUSE_CODE_2[0]))
-                cause_button.click()
-                # double_click(d.find_element_by_css_selector("div.req-form-select-wide-div").find_element_by_xpath("//option[@value='{}']".format(CAUSE_LIST_CODE[0]))) # suicide
 
-                if len(MCD_CAUSE_CODE_2) > 1:
-                    for ct in range(1, len(MCD_CAUSE_CODE_2)):
-                        d.find_element_by_xpath("//select[@id='codes-D77.V15']/option[@value='{}']".format(MCD_CAUSE_CODE_2[ct])).click()
 
-                        # d.find_element_by_css_selector("div.req-form-select-wide-div").find_element_by_xpath("//option[@value='{}']".format(CAUSE_LIST_CODE[ct])).click()
-
-                d.execute_script("add('D77.V15_AND', 'and2 nohier nocodes')")
+                # ## Choose cause
+                # # double_click(d.find_element_by_id("codes-D77.V15").find_element_by_xpath("//option[@value='{}']".format(MCD_CAUSE_CODE_2[0])))
+                # cause_button = d.find_element_by_xpath("//select[@id='codes-D77.V15']/option[@value='{}']".format(MCD_CAUSE_CODE_2[0]))
+                # cause_button.click()
+                # # double_click(d.find_element_by_css_selector("div.req-form-select-wide-div").find_element_by_xpath("//option[@value='{}']".format(CAUSE_LIST_CODE[0]))) # suicide
+                #
+                # if len(MCD_CAUSE_CODE_2) > 1:
+                #     for ct in range(1, len(MCD_CAUSE_CODE_2)):
+                #         d.find_element_by_xpath("//select[@id='codes-D77.V15']/option[@value='{}']".format(MCD_CAUSE_CODE_2[ct])).click()
+                #
+                #         # d.find_element_by_css_selector("div.req-form-select-wide-div").find_element_by_xpath("//option[@value='{}']".format(CAUSE_LIST_CODE[ct])).click()
+                #
+                # d.execute_script("add('D77.V15_AND', 'and2 nohier nocodes')")
 
 
 
@@ -318,7 +329,10 @@ class wonder:
         ## READ IN CSV
         def read_wonder_csv(filename):
             initial = pd.read_csv(filename, delimiter = "\t")
-            final =   pd.read_csv(filename, delimiter = "\t", skipfooter = len(initial.index) - initial[initial[initial.columns[0]]=='---'].index[0])
+            if len(initial[initial[initial.columns[0]]=='---'].index) > 0:
+                final =   pd.read_csv(filename, delimiter = "\t", skipfooter = len(initial.index) - initial[initial[initial.columns[0]]=='---'].index[0])
+            else:
+                final = initial
             return final
 
         self.df = read_wonder_csv(filename)
@@ -625,10 +639,10 @@ class wonder:
 
     def mcd_or_load(
             self,
-            MCD_ICD_10_CODE_1 = None,
-            MCD_ICD_10_CODE_2 = None,
-            MCD_CAUSE_CODE_1 = None,
-            MCD_CAUSE_CODE_2 = None,
+            MCD_ICD_10_CODE_1,
+            MCD_ICD_10_CODE_2,
+            MCD_CAUSE_CODE_1,
+            MCD_CAUSE_CODE_2,
             RUN_NAME = "",
             by_variables = None,
             existing_file = False,
@@ -639,8 +653,8 @@ class wonder:
             self.mcd(
                     MCD_ICD_10_CODE_1 = MCD_ICD_10_CODE_1,
                     MCD_ICD_10_CODE_2 = MCD_ICD_10_CODE_2,
-                    MCD_CAUSE_CODE_1 = None,
-                    MCD_CAUSE_CODE_2 = None,
+                    MCD_CAUSE_CODE_1 = MCD_CAUSE_CODE_1,
+                    MCD_CAUSE_CODE_2 = MCD_CAUSE_CODE_2,
                     RUN_NAME = RUN_NAME,
                     by_variables = by_variables,
                     AGEG = AGEG
@@ -650,11 +664,20 @@ class wonder:
             self.df = pd.read_csv("{}/{}_pull.csv".format(self.download_dir, RUN_NAME))
 
 
-    def __init__(self, MCD_ICD_10_CODE_1=None, MCD_ICD_10_CODE_2=None,
-                MCD_CAUSE_CODE_1 = None, MCD_CAUSE_CODE_2 = None,
-                RUN_NAME="", AGEG=None, GENDERG = None, RACEG = None,
-                HISPANICG = None, by_variables="", existing_file = False,
-                download_dir = True, just_go=False):
+    def __init__(self,
+                MCD_ICD_10_CODE_1=None,
+                MCD_ICD_10_CODE_2=None,
+                MCD_CAUSE_CODE_1 = None,
+                MCD_CAUSE_CODE_2 = None,
+                RUN_NAME="",
+                AGEG=None,
+                GENDERG = None,
+                RACEG = None,
+                HISPANICG = None,
+                by_variables="",
+                existing_file = False,
+                download_dir = True,
+                just_go=False):
 
 
         if not isinstance(download_dir, str):
@@ -672,8 +695,8 @@ class wonder:
 
         self.MCD_ICD_10_CODE_1 = MCD_ICD_10_CODE_1
         self.MCD_ICD_10_CODE_2 = MCD_ICD_10_CODE_2
-        self.MCD_CAUSE_CODE_1 = MCD_ICD_10_CODE_1
-        self.MCD_CAUSE_CODE_2 = MCD_ICD_10_CODE_2
+        self.MCD_CAUSE_CODE_1 = MCD_CAUSE_CODE_1
+        self.MCD_CAUSE_CODE_2 = MCD_CAUSE_CODE_2
         self.RUN_NAME = RUN_NAME
         self.by_variables = by_variables
         self.download_dir = download_dir
@@ -683,7 +706,7 @@ class wonder:
         self.RACEG = RACEG
         self.HISPANICG =HISPANICG
 
-        if not just_go:
+        if just_go is False:
 
             self.mcd_or_load(
                     MCD_ICD_10_CODE_1 = self.MCD_ICD_10_CODE_1,
