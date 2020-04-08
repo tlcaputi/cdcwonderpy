@@ -1,4 +1,4 @@
-# wonderpy: Use Python3 and Selenium to automatically complete the CDC WONDER Online Form
+# cdcwonderpy: Use Python3 and Selenium to automatically complete the CDC WONDER Online Form
 
 ## Disclaimer
 This project is a work-in-progress. It works in some cases but may not work in many others (and may not be flexible enough for some users), and some extra code exists for functions that are not yet operational. This program has only been tested in Windows 10.
@@ -14,14 +14,14 @@ This package is intended to be used with the R package ["wondeR"](https://www.gi
 To use this package, you'll need to have Selenium set up for Chrome. This means you need to have Chrome, Chromedriver, and Selenium.
 
 ```
-$ pip install wonderpy
+$ pip install cdcwonderpy
 ```
 
 
 ## Usage
 
 ```python
-from wonderpy.pulldata import wonder
+from cdcwonderpy.pulldata import wonder
 
 wonder(
   ## wonderpy arguments

@@ -1,12 +1,12 @@
-Metadata-Version: 1.0
-Name: wonderpy
+Metadata-Version: 2.1
+Name: cdcwonderpy
 Version: 0.0.1
-Summary: UNKNOWN
-Home-page: UNKNOWN
+Summary: A Python package to automatically fill out the CDC WONDER MCD form
+Home-page: https://github.com/tlcaputi/cdcwonderpy
 Author: Theodore L Caputi
-Author-email: tcaputi@mit.edu
+Author-email: tcaputi@gmail.com
 License: No License
-Description: # wonderpy: Use Python3 and Selenium to automatically complete the CDC WONDER Online Form
+Description: # cdcwonderpy: Use Python3 and Selenium to automatically complete the CDC WONDER Online Form
         
         ## Disclaimer
         This project is a work-in-progress. It works in some cases but may not work in many others (and may not be flexible enough for some users), and some extra code exists for functions that are not yet operational. This program has only been tested in Windows 10.
@@ -22,14 +22,14 @@ Description: # wonderpy: Use Python3 and Selenium to automatically complete the 
         To use this package, you'll need to have Selenium set up for Chrome. This means you need to have Chrome, Chromedriver, and Selenium.
         
         ```
-        $ pip install wonderpy
+        $ pip install cdcwonderpy
         ```
         
         
         ## Usage
         
         ```python
-        from wonderpy.pulldata import wonder
+        from cdcwonderpy.pulldata import wonder
         
         wonder(
           ## wonderpy arguments
@@ -57,3 +57,4 @@ Description: # wonderpy: Use Python3 and Selenium to automatically complete the 
         ```
         
 Platform: UNKNOWN
+Description-Content-Type: text/markdown
